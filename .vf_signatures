@@ -199,7 +199,7 @@ $SIGNATURES = {
     'releases' => {
       '3' => {
         'minor' => '3.6',
-        'release' => '3.6.2'
+        'release' => '3.6.4'
       }
     },
     'update' => {
@@ -220,12 +220,12 @@ $SIGNATURES = {
       {
         'file' => 'includes/version.php',
         'multiline' => 1,
-        'regex' => '(?:\\$RELEASE|\\$DEV_LEVEL) = \'(.*)\''
+        'regex' => '(?:\\$RELEASE|const RELEASE|\\$DEV_LEVEL|const DEV_LEVEL) = \'(.*)\''
       },
       {
         'file' => 'libraries/cms/version/version.php',
         'multiline' => 1,
-        'regex' => '(?:\\$RELEASE|\\$DEV_LEVEL) = \'(.*)\''
+        'regex' => '(?:\\$RELEASE|const RELEASE|\\$DEV_LEVEL|const DEV_LEVEL) = \'(.*)\''
       }
     ]
   },
